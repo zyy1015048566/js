@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+body{
+    background: #FFFFFF;
+}
+.top{
+    width: 100%;
+    height: 40px;
+    border-bottom: 1px solid #e4e3e3;
+}
+header{
+    width: 100%;
+    height: 40px;
+    border-bottom: 1px solid #eae3e3;
+}
+main{
+    width: 900px;
+    height: auto;
+    margin: 20px auto;
+}
+main>.tab{
+    position: relative;
+    height: 40px;
+    display: flex;
+}
+.tab>li{
+
+    height: 100%;
+    flex-grow: 1;
+    text-align: center;
+    line-height: 40px;
+    transition:.5s;
+}
+.tab>.top1{
+    width: 300px;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: #5ac8fa;
+    z-index: -1;
+    transition: all ease-in .3s;
+}
+li.hot:nth-child(1)~.top1{
+    transform: translate(0,0);
+}
+li.hot:nth-child(2)~.top1{
+    transform: translate(100%,0);
+}
+li.hot:nth-child(3)~.top1{
+    transform: translate(200%,0);
+}
+.tab>li.hot{
+    color: #FFFFFF;
+}
+.content>li{
+    font-size: 20px;
+    margin-top: 20px;
+    height: 50px;
+    line-height: 1.5;
+    border-bottom: 1px solid #e4e3e3;
+}
+.content p,.content input{
+    float: left;
+}
+.content input{
+    margin: 10px 5px;
+    float: left;
+}
+.content del{
+    margin: 0 10px;
+
+    float: right;
+}
+.content time{
+    float: right;
+}
+.footer{
+    width: 900px;
+    margin: 30px auto;
+}
+.footer input{
+    margin-right: 10px;
+    font-size: 18px;
+    height:40px;
+    border-radius: 6px;
+}
+.footerText{
+    width: 300px;
+    padding-left:8px;
+    border:1px solid #5ac8fa;
+}
+.footerSubmit{
+    color: #ffffff;
+    width: 80px;
+    background: #5ac8fa;
+    border: 0;
+}
